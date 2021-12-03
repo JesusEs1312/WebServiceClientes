@@ -1,5 +1,5 @@
-# Web Service Clientes (Proyecto Escolar)
-Servicio Web REST para Crear, Mostrar, Actualizar y Eliminar informacion sobre clientes.  
+# Web Service Productos (Proyecto Escolar)
+Servicio Web REST para Crear, Mostrar, Actualizar y Eliminar informacion sobre productos.  
 
 # Ambiente de Desarrollo
 - ASP.NET Framework 5.0
