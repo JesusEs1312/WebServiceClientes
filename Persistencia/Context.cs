@@ -6,10 +6,10 @@ namespace Persistencia
 {
     public class Context : DbContext
     {
-        public Context(DbContextOptions options)
+        public Context(DbContextOptions options) : base(options)
         {    
         }
-
+        
         public DbSet<Producto> Producto {get; set;}//Entidad para la tabla productos de SQL Server
     }   
 }

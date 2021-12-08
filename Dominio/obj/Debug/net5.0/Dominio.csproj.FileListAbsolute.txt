@@ -10,3 +10,6 @@ C:\WebService\Dominio\obj\Debug\net5.0\Dominio.csproj.CoreCompileInputs.cache
 C:\WebService\Dominio\obj\Debug\net5.0\Dominio.dll
 C:\WebService\Dominio\obj\Debug\net5.0\ref\Dominio.dll
 C:\WebService\Dominio\obj\Debug\net5.0\Dominio.pdb
+C:\WebService\Dominio\bin\Debug\net5.0\Dominio.runtimeconfig.json
+C:\WebService\Dominio\bin\Debug\net5.0\Dominio.runtimeconfig.dev.json
+C:\WebService\Dominio\obj\Debug\net5.0\Dominio.genruntimeconfig.cache
