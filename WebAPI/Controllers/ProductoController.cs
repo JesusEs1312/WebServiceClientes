@@ -24,6 +24,13 @@ namespace WebAPI.Controllers
         {
             //Llamar al mediador para obtener los datos
             return await this.mediator.Send(new Consulta.Ejecuta());
+        }
+
+        //Insertar nuevo producto
+        [HttpPost]
+        public async Task<ActionResult<Unit>> Insertar(Insertar.Ejecutar data)
+        {
+            return await mediator.Send(data);
         } 
     }
 }
