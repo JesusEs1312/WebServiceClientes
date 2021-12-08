@@ -39,6 +39,13 @@ namespace WebAPI.Controllers
         {
             data.id = id;
             return await this.mediator.Send(data);
-        } 
+        }
+
+        //Eliminar producto
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Unit>> Eliminar(int id)
+        {
+            return await mediator.Send(new Eliminar.Ejecutar{id = id});
+        }
     }
 }
