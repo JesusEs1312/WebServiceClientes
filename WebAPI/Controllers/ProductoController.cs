@@ -31,6 +31,14 @@ namespace WebAPI.Controllers
         public async Task<ActionResult<Unit>> Insertar(Insertar.Ejecutar data)
         {
             return await mediator.Send(data);
+        }
+
+        //Modificar producto
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Unit>> Modificar(int id, Modificar.Ejecutar data)
+        {
+            data.id = id;
+            return await this.mediator.Send(data);
         } 
     }
 }
