@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rkJrsomC0nwRQAV3yJr8+EJlT+/n/BRKrZuqtqXEiaMqTDMYuZqe2gR/WRaPYUQjfXKM8vrJpdJy+hG72WwrNg==",
+  "dgSpecHash": "qJu9xTCE2a/XdwfrKGjCR5qDiNcYzdRdHzAiVUoeYFdQMxUdNnm7nWaJtov0jBrjROoQTa1Rk8aI/+ShM2Xi0A==",
   "success": true,
-  "projectFilePath": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
+  "projectFilePath": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Adz3w1GgjZjXl2XS8QcOetf5TVdft9aK+1pk/cEeu7Pn71gXWdH130WMO4nX0PaM4hmaaywEtG2stkC5q0x5sw==",
+  "dgSpecHash": "L1/DFJZAobHIl408yKe3JRUZna4SzrSR7wJeIS4OYdPsMIMWukhYmSOdvap70smdP81Pgwa2Cy9tAmxmQzeBpg==",
   "success": true,
-  "projectFilePath": "C:\\WebService\\Dominio\\Dominio.csproj",
+  "projectFilePath": "c:\\WebService\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

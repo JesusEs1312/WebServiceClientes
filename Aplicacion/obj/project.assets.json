@@ -5894,11 +5894,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
+      "projectUniqueName": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
       "projectName": "Aplicacion",
-      "projectPath": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
+      "projectPath": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
       "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-      "outputPath": "C:\\WebService\\Aplicacion\\obj\\",
+      "outputPath": "c:\\WebService\\Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5919,11 +5919,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\WebService\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj"
+            "c:\\WebService\\Dominio\\Dominio.csproj": {
+              "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj"
             },
-            "C:\\WebService\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "C:\\WebService\\Persistencia\\Persistencia.csproj"
+            "c:\\WebService\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "c:\\WebService\\Persistencia\\Persistencia.csproj"
             }
           }
         }
