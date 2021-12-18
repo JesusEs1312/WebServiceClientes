@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using System.Threading.Tasks;
 using Aplicacion.ManejadorError;
 using Microsoft.AspNetCore.Http;
@@ -18,7 +19,7 @@ namespace WebAPI.Middleware
             this.logger = logger;
         }
 
-        public async Task Invocar(HttpContext context)
+        public async Task Invoke(HttpContext context)
         {
             try
             {
@@ -44,6 +45,7 @@ namespace WebAPI.Middleware
                 case Exception e:
                     loggger.LogError(ex, "Error del servidor");
                     errores = string.IsNullOrWhiteSpace(e.Message) ? "Error" : e.Message;
+                    context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     break;
             }
             context.Response.ContentType = "application/json";

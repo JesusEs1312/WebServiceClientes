@@ -1,5 +1,7 @@
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Aplicacion.ManejadorError;
 using MediatR;
 using Persistencia;
 
@@ -30,7 +32,8 @@ namespace Aplicacion
             {
                 //Encontrar producto
                 var producto = await this.context.Producto.FindAsync(request.id);
-                if(producto == null) throw new System.Exception("No se encontro el curso en la base de datos");
+                //Excepcion realizada con tu Middleware
+                if(producto == null) throw new ManejadorExcepcion(HttpStatusCode.NotFound, new {mensaje = "No se encontro el producto"});
                 //Actualizar Datos
                 producto.nombre       = request.nombre ?? producto.nombre;
                 producto.marca        = request.marca ?? producto.marca;

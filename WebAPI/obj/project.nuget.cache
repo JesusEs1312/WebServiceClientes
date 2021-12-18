@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AVaxFkLrcDz+Cvrthyf9D+b99tewkGJUzjXiXpSyXznXp3IE8XzK8S464bB9BCa2mn0Kb/8/9r7Jf4WGqbTcUQ==",
+  "dgSpecHash": "cjINrxJGeKGKEGAcDzFQUtENTC/l3be96/U2X2HVZheSm7n+ApYtaGksrrcEAFhwQc8/p8O7fhK/sttIfJWLFg==",
   "success": true,
-  "projectFilePath": "c:\\WebService\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\WebService\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
