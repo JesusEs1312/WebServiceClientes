@@ -47,5 +47,12 @@ namespace WebAPI.Controllers
         {
             return await mediator.Send(new Eliminar.Ejecutar{id = id});
         }
+
+        //Encontrar por Id
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Producto>> EncontrarPorId(int id)
+        {
+            return await mediator.Send(new EncontrarPorId.Ejecutar{ID = id});
+        }
     }
 }

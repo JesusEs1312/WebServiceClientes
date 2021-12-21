@@ -12,7 +12,7 @@ namespace Aplicacion
     {
         public class Ejecutar : IRequest<Producto>
         {
-            public int ID {get;}
+            public int ID {get; set;}
         }
 
         public class Manejador : IRequestHandler<Ejecutar, Producto>
