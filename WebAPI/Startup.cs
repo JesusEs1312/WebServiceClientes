@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Aplicacion;
+using Dominio;
 using MediatR;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
@@ -44,6 +48,17 @@ namespace WebAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
             });
+            //-----------CONFIGURACION DE IDENTITY CORE----------
+            //Crear la variable que representa la instancia de la clase usuario
+            var builder = services.AddIdentityCore<Usuario>();
+            //Objeto de tipo IdentityBuilder
+            var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
+            //Agregar la instancia del EntityFramework
+            identityBuilder.AddEntityFrameworkStores<Context>();
+            //Acceso a los usuarios y manejo de Login
+            identityBuilder.AddSignInManager<SignInManager<Usuario>>();
+            //Metodo que se utilizo para el IdentityCore del usuario
+            services.TryAddSingleton<ISystemClock, SystemClock>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
