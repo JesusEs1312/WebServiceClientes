@@ -9,12 +9,12 @@ namespace Persistencia
     {
         public static async Task InsertarData(Context context, UserManager<Usuario> usuarioManager)
         {
-            //Validar si existe algun usuario
-            if(usuarioManager.Users.Any())
+            //Validar no existe algun usuario
+            if(!usuarioManager.Users.Any())
             {
                 var usuario = new Usuario{nombreCompleto = "Jesus Estrada", UserName = "JEstrada", Email = "estrada.jesus@gmail.com"};
                 //Crear un nuevo usuario con su contraseña
-                await usuarioManager.CreateAsync(usuario, "password123");
+                await usuarioManager.CreateAsync(usuario, "Password123$");
             }
         }
     }

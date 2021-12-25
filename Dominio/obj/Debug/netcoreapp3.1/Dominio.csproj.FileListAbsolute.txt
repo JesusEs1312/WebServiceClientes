@@ -1,0 +1,13 @@
+C:\WebService\Dominio\bin\Debug\netcoreapp3.1\Dominio.deps.json
+C:\WebService\Dominio\bin\Debug\netcoreapp3.1\Dominio.runtimeconfig.json
+C:\WebService\Dominio\bin\Debug\netcoreapp3.1\Dominio.runtimeconfig.dev.json
+C:\WebService\Dominio\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\WebService\Dominio\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.AssemblyReference.cache
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfoInputs.cache
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfo.cs
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CoreCompileInputs.cache
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb
+C:\WebService\Dominio\obj\Debug\netcoreapp3.1\Dominio.genruntimeconfig.cache

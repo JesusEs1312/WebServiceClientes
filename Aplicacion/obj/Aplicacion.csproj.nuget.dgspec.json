@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WebService\\Aplicacion\\Aplicacion.csproj": {}
+    "c:\\WebService\\Aplicacion\\Aplicacion.csproj": {}
   },
   "projects": {
-    "C:\\WebService\\Aplicacion\\Aplicacion.csproj": {
+    "c:\\WebService\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "C:\\WebService\\Aplicacion\\obj\\",
+        "outputPath": "c:\\WebService\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\WebService\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj"
+              "c:\\WebService\\Dominio\\Dominio.csproj": {
+                "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj"
               },
-              "C:\\WebService\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\WebService\\Persistencia\\Persistencia.csproj"
+              "c:\\WebService\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "c:\\WebService\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -51,6 +51,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -75,14 +79,14 @@
         }
       }
     },
-    "C:\\WebService\\Dominio\\Dominio.csproj": {
+    "c:\\WebService\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WebService\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "c:\\WebService\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj",
+        "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "C:\\WebService\\Dominio\\obj\\",
+        "outputPath": "c:\\WebService\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -143,6 +147,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -151,14 +158,14 @@
         }
       }
     },
-    "C:\\WebService\\Persistencia\\Persistencia.csproj": {
+    "c:\\WebService\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WebService\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "c:\\WebService\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\WebService\\Persistencia\\Persistencia.csproj",
+        "projectPath": "c:\\WebService\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "C:\\WebService\\Persistencia\\obj\\",
+        "outputPath": "c:\\WebService\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -179,8 +186,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\WebService\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj"
+              "c:\\WebService\\Dominio\\Dominio.csproj": {
+                "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj"
               }
             }
           }

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Gg8OZWrQsCHdNXYdWaWuZ6nQs0t4AEDX06EB921WDn8147CgLiI6KJa0glyq05h+kvTmOs1kdvD4BBKjUcdeIw==",
+  "dgSpecHash": "miYtM/CRmLH0hZ8YcRhZTSjHu/CFr8toBMZ9hY81D47j6xoC12IdBD6N2pyMsPXXCO2zKh/drZPw/e5C7JnVig==",
   "success": true,
-  "projectFilePath": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
+  "projectFilePath": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Alldatum Business\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\Alldatum Business\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
+    "C:\\Users\\Alldatum Business\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
