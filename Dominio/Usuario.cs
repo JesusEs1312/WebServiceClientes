@@ -4,6 +4,6 @@ namespace Dominio
 {
     public class Usuario : IdentityUser
     {
-        public string nombreCompleto {get; set;}
+        public string NombreCompleto {get; set;}
     }
 }

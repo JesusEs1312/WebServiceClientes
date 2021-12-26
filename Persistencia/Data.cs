@@ -12,7 +12,7 @@ namespace Persistencia
             //Validar no existe algun usuario
             if(!usuarioManager.Users.Any())
             {
-                var usuario = new Usuario{nombreCompleto = "Jesus Estrada", UserName = "JEstrada", Email = "estrada.jesus@gmail.com"};
+                var usuario = new Usuario{NombreCompleto = "Jesus Estrada", UserName = "JEstrada", Email = "estrada.jesus@gmail.com"};
                 //Crear un nuevo usuario con su contraseña
                 await usuarioManager.CreateAsync(usuario, "Password123$");
             }

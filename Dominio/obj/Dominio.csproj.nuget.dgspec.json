@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\WebService\\Dominio\\Dominio.csproj": {}
+    "C:\\WebService\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "c:\\WebService\\Dominio\\Dominio.csproj": {
+    "C:\\WebService\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\WebService\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\WebService\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "c:\\WebService\\Dominio\\obj\\",
+        "outputPath": "C:\\WebService\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

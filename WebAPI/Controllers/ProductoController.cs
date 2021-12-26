@@ -13,18 +13,11 @@ namespace WebAPI.Controllers
     {
         //Obtener todos los datos
         [HttpGet]
-        public async Task<ActionResult<List<Producto>>> Get()
-        {
-            //Llamar al mediador para obtener los datos
-            return await this.mediator.Send(new Consulta.Ejecuta());
-        }
+        public async Task<ActionResult<List<Producto>>> Get() => await this.mediator.Send(new Consulta.Ejecuta());
 
         //Insertar nuevo producto
         [HttpPost]
-        public async Task<ActionResult<Unit>> Insertar(Insertar.Ejecutar data)
-        {
-            return await mediator.Send(data);
-        }
+        public async Task<ActionResult<Unit>> Insertar(Insertar.Ejecutar data) => await mediator.Send(data);
 
         //Modificar producto
         [HttpPut("{id}")]
@@ -36,16 +29,10 @@ namespace WebAPI.Controllers
 
         //Eliminar producto
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Unit>> Eliminar(int id)
-        {
-            return await mediator.Send(new Eliminar.Ejecutar{id = id});
-        }
+        public async Task<ActionResult<Unit>> Eliminar(int id) => await mediator.Send(new Eliminar.Ejecutar{id = id});
 
         //Encontrar por Id
         [HttpGet("{id}")]
-        public async Task<ActionResult<Producto>> EncontrarPorId(int id)
-        {
-            return await mediator.Send(new EncontrarPorId.Ejecutar{ID = id});
-        }
+        public async Task<ActionResult<Producto>> EncontrarPorId(int id) => await mediator.Send(new EncontrarPorId.Ejecutar{ID = id});
     }
 }
