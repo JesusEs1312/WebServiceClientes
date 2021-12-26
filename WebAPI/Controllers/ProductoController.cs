@@ -9,15 +9,8 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]//http://localhost:5000/api/producto
     [ApiController]
-    public class ProductoController : ControllerBase
+    public class ProductoController : MiControllerBase
     {
-        private readonly IMediator mediator;
-
-        public ProductoController(IMediator mediator)
-        {
-            this.mediator = mediator;
-        }
-
         //Obtener todos los datos
         [HttpGet]
         public async Task<ActionResult<List<Producto>>> Get()
