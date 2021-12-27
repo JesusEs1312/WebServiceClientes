@@ -6158,11 +6158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\WebService\\Seguridad\\Seguridad.csproj",
+      "projectUniqueName": "C:\\WebService\\Seguridad\\Seguridad.csproj",
       "projectName": "Seguridad",
-      "projectPath": "c:\\WebService\\Seguridad\\Seguridad.csproj",
+      "projectPath": "C:\\WebService\\Seguridad\\Seguridad.csproj",
       "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-      "outputPath": "c:\\WebService\\Seguridad\\obj\\",
+      "outputPath": "C:\\WebService\\Seguridad\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6183,8 +6183,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\WebService\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "c:\\WebService\\Aplicacion\\Aplicacion.csproj"
+            "C:\\WebService\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "C:\\WebService\\Aplicacion\\Aplicacion.csproj"
             }
           }
         }

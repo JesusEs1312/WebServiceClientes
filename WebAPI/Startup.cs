@@ -1,3 +1,4 @@
+using System.Text;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using Aplicacion.Contratos;
 using Dominio;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -18,6 +20,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Persistencia;
 using Seguridad.Token;
@@ -64,6 +67,21 @@ namespace WebAPI
 
             //------------Inyeccion del servicio de JSON WEB TOKEN-------------
             services.AddScoped<IJwtGenerador, JwtGenerador>();
+            //Generar la clave secreta que realizamos en el proyecto de Seguridad
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra secreta"));
+            //Servicio para implementar la Autenticacion
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt => 
+            {
+                //Validaciones en los paramatros
+                opt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey   = true,//Validar el Request del cliente
+                    IssuerSigningKey           = key,//Palabra clave que se paso en el Token
+                    ValidateAudience           = false,//Quien puede crear los Token(TODOS)
+                    ValidateIssuer             = false//Envio de validacion de Token
+                };
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,6 +97,8 @@ namespace WebAPI
             }
 
             //app.UseHttpsRedirection();
+
+            app.UseAuthentication();//Se usara la utenticacion de Token
 
             app.UseRouting();
 

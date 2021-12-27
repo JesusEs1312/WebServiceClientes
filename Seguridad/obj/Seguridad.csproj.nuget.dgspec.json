@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\WebService\\Seguridad\\Seguridad.csproj": {}
+    "C:\\WebService\\Seguridad\\Seguridad.csproj": {}
   },
   "projects": {
-    "c:\\WebService\\Aplicacion\\Aplicacion.csproj": {
+    "C:\\WebService\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "c:\\WebService\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "C:\\WebService\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "c:\\WebService\\Aplicacion\\obj\\",
+        "outputPath": "C:\\WebService\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\WebService\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj"
+              "C:\\WebService\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj"
               },
-              "c:\\WebService\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "c:\\WebService\\Persistencia\\Persistencia.csproj"
+              "C:\\WebService\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\WebService\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "c:\\WebService\\Dominio\\Dominio.csproj": {
+    "C:\\WebService\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\WebService\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\WebService\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "c:\\WebService\\Dominio\\obj\\",
+        "outputPath": "C:\\WebService\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -162,14 +162,14 @@
         }
       }
     },
-    "c:\\WebService\\Persistencia\\Persistencia.csproj": {
+    "C:\\WebService\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\WebService\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\WebService\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "c:\\WebService\\Persistencia\\Persistencia.csproj",
+        "projectPath": "C:\\WebService\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "c:\\WebService\\Persistencia\\obj\\",
+        "outputPath": "C:\\WebService\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -190,8 +190,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\WebService\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\WebService\\Dominio\\Dominio.csproj"
+              "C:\\WebService\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\WebService\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -224,14 +224,14 @@
         }
       }
     },
-    "c:\\WebService\\Seguridad\\Seguridad.csproj": {
+    "C:\\WebService\\Seguridad\\Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\WebService\\Seguridad\\Seguridad.csproj",
+        "projectUniqueName": "C:\\WebService\\Seguridad\\Seguridad.csproj",
         "projectName": "Seguridad",
-        "projectPath": "c:\\WebService\\Seguridad\\Seguridad.csproj",
+        "projectPath": "C:\\WebService\\Seguridad\\Seguridad.csproj",
         "packagesPath": "C:\\Users\\Alldatum Business\\.nuget\\packages\\",
-        "outputPath": "c:\\WebService\\Seguridad\\obj\\",
+        "outputPath": "C:\\WebService\\Seguridad\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -252,8 +252,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\WebService\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "c:\\WebService\\Aplicacion\\Aplicacion.csproj"
+              "C:\\WebService\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\WebService\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }

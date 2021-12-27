@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Aplicacion;
 using Dominio;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -13,6 +14,7 @@ namespace WebAPI.Controllers
     {
         //Obtener todos los datos
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<List<Producto>>> Get() => await this.mediator.Send(new Consulta.Ejecuta());
 
         //Insertar nuevo producto

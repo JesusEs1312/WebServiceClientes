@@ -71,3 +71,6 @@ C:\WebService\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFramew
 C:\WebService\WebAPI\bin\Debug\net5.0\FluentValidation.dll
 C:\WebService\WebAPI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\WebService\WebAPI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\WebService\WebAPI\bin\Debug\net5.0\Seguridad.dll
+C:\WebService\WebAPI\bin\Debug\net5.0\Seguridad.pdb
+C:\WebService\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -20,7 +20,7 @@ namespace Seguridad.Token
                 new Claim(JwtRegisteredClaimNames.NameId, usuario.UserName)
             };
             //Credenciales de Acceso (Con la clave secreta)
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Palabra secreta"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra secreta"));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
             //Descripcion del Token
             var tokenDescripcion = new SecurityTokenDescriptor
