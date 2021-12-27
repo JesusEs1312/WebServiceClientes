@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ex66IeNrRhbfvJ/5zxhandMFpws8iUmNlE2iXLLFjzpnHzLACuNFMXDruQMPvlCr30/9UeAPeDSkjYSq4SgyIw==",
+  "dgSpecHash": "SKetgn8Lb2Opcyx3q8UjGvbUu8mXiBCAQRYM3JOUeefNWwT2yVcg74/MgP99/SaMfzijqUoHTbavlcJBfRzNTw==",
   "success": true,
-  "projectFilePath": "C:\\WebService\\Dominio\\Dominio.csproj",
+  "projectFilePath": "c:\\WebService\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",

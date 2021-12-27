@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Aplicacion;
+using Aplicacion.Contratos;
 using Dominio;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
@@ -19,6 +20,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Persistencia;
+using Seguridad.Token;
 using WebAPI.Middleware;
 
 namespace WebAPI
@@ -59,6 +61,9 @@ namespace WebAPI
             identityBuilder.AddSignInManager<SignInManager<Usuario>>();
             //Metodo que se utilizo para el IdentityCore del usuario
             services.TryAddSingleton<ISystemClock, SystemClock>();
+
+            //------------Inyeccion del servicio de JSON WEB TOKEN-------------
+            services.AddScoped<IJwtGenerador, JwtGenerador>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

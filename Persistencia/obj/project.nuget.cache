@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N/5Fmy+ZSOqnjuMvHWaSNmXVNL81tfQ7BG23ehX4lQj/vQDw2lwIJ3QeLMKPVOVqa/6Zy9JPiWPETCWP5BSTCg==",
+  "dgSpecHash": "+3Q1vz9x9F0KybR1TNkzjN1X9rXaNl1B5TiOvwiSLgxPBaRdof3bbOUX19fYKlJ8/a9QrEAbnfLesTFxpdodRg==",
   "success": true,
-  "projectFilePath": "C:\\WebService\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "c:\\WebService\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alldatum Business\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
