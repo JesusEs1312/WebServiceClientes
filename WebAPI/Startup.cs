@@ -1,3 +1,4 @@
+using System.Net;
 using System.Text;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,8 @@ using Microsoft.OpenApi.Models;
 using Persistencia;
 using Seguridad.Token;
 using WebAPI.Middleware;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace WebAPI
 {
@@ -48,7 +51,12 @@ namespace WebAPI
             });
             //Mediator para conectarse con la WEBAPI
             services.AddMediatR(typeof(Consulta.Manejador).Assembly);
-            services.AddControllers();
+            //Configuraciones de los Controladores
+            services.AddControllers( opt => {
+                //Configuracion para que todos los controladores tengan habilitada la Authorization
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                opt.Filters.Add(new AuthorizeFilter(policy));
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
