@@ -7,13 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
-    //http://localhost:5000/api/usuario/login
     [Route("api/[controller]")]
     [ApiController]
     [AllowAnonymous]
     public class UsuarioController : MiControllerBase
     {
+        //http://localhost:5000/api/usuario/login
         [HttpPost("login")]
         public async Task<ActionResult<UsuarioData>> Login(Login.Ejecuta parametros) => await mediator.Send(parametros);
+
+        [HttpPost("registrar")]
+        public async Task<ActionResult<UsuarioData>> registrar(Registrar.Ejecuta parametros) => await mediator.Send(parametros);
     }
 }
