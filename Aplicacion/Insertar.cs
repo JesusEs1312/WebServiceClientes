@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Dominio;
@@ -28,9 +29,12 @@ namespace Aplicacion
 
             public async Task<Unit> Handle(Ejecutar request, CancellationToken cancellationToken)
             {
+                //Creamos un identificador Global Unico
+                Guid id = Guid.NewGuid();
                 //Crear propiedad (Porducto)
                 var producto = new Producto
                 {
+                    id           = id,
                     nombre       = request.nombre,
                     marca        = request.marca,
                     fabricante   = request.fabricante,

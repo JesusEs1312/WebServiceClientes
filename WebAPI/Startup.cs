@@ -66,6 +66,9 @@ namespace WebAPI
             var builder = services.AddIdentityCore<Usuario>();
             //Objeto de tipo IdentityBuilder
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
+            //Agregar el servicio para crear Roles
+            identityBuilder.AddRoles<IdentityRole>();
+            identityBuilder.AddClaimsPrincipalFactory<UserClaimsPrincipalFactory<Usuario, IdentityRole>>();
             //Agregar la instancia del EntityFramework
             identityBuilder.AddEntityFrameworkStores<Context>();
             //Acceso a los usuarios y manejo de Login
