@@ -1,3 +1,4 @@
+using System;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace Aplicacion
     {
         public class Ejecutar : IRequest
         {
-            public int id {get; set;}
+            public Guid id {get; set;}
             public string nombre {get; set;}
             public string marca {get; set;}
             public string fabricante {get; set;}

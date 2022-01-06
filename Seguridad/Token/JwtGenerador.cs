@@ -12,13 +12,22 @@ namespace Seguridad.Token
 {
     public class JwtGenerador : IJwtGenerador
     {
-        public string CrearToken(Usuario usuario)
+        public string CrearToken(Usuario usuario, List<string> roles)
         {
-            //Lista de Roles
+            //Lista de Claims
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.NameId, usuario.UserName)
             };
+            //Verificamos los roles
+            if(roles != null)
+            {
+                foreach(var rol in roles)
+                {
+                    //Agregamos los roles del usuario al Token
+                    claims.Add(new Claim(ClaimTypes.Role, rol));
+                }
+            }
             //Credenciales de Acceso (Con la clave secreta)
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra secreta"));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
