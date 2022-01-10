@@ -3,6 +3,9 @@ Servicio Web REST FULL para crear usuarios, roles y tokens para la gestion y adm
 # Ambiente de Desarrollo
 - ASP.NET Framework 5.0
 - EntityFrameworkCore
+- Identity Core
+- Fluent Value
+- JWT
 - SQL Server 2019
 - Visual Studio Code
 # Versión
