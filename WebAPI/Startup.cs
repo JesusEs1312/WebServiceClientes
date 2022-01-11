@@ -43,6 +43,12 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Configurar poliza para que la Web API pueda ser consumida por cualquier Cliente (React)
+            services.AddCors(o => o.AddPolicy("corsApp", builder => {
+                builder.AllowAnyHeader();//Permitir cualquier encabezado
+                builder.AllowAnyMethod();//permitir cualquier tipo de metodo
+                builder.AllowAnyOrigin();//permitir cualquier origen
+            }));
             //Inyectar el context de la data a la API
             services.AddDbContext<Context>(opt => 
             {
@@ -99,6 +105,8 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //Utilizar poliza para los Cors
+            app.UseCors("corsApp");
             app.UseMiddleware<ManejadorErrorMiddleware>();
             if (env.IsDevelopment())
             {
