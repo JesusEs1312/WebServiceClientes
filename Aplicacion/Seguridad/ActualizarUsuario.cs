@@ -59,9 +59,11 @@ namespace Aplicacion.Seguridad
                 }
                 //Verificamos si el nuevo Email ya existe en otro Usuario
                 var existeEmail = await context.Users.Where(x => x.Email == request.Email).AnyAsync();
-                if(existeEmail)
-                {
-                    throw new ManejadorExcepcion(HttpStatusCode.InternalServerError, new {mensaje = "Este Email ya le pertenece a otro usuario"});
+                if(!(request.Email == user.Email)){
+                    if(existeEmail)
+                    {
+                        throw new ManejadorExcepcion(HttpStatusCode.InternalServerError, new {mensaje = "Este Email ya le pertenece a otro usuario"});
+                    }
                 }
                 //Actualizamos los datos
                 user.NombreCompleto = request.NombreCompleto;

@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Dominio;
+using FluentValidation;
 using MediatR;
 using Persistencia;
 
@@ -11,11 +12,24 @@ namespace Aplicacion
     {
         public class Ejecutar : IRequest
         {
+            public Guid? productoId {get; set;}
             public string nombre {get; set;}
             public string marca {get; set;}
             public string fabricante {get; set;}
             public decimal precio {get; set;}
             public string codigo_barra {get; set;}
+        }
+
+        public class Validaciones : AbstractValidator<Ejecutar>
+        {
+            public Validaciones()
+            {
+                RuleFor(n => n.nombre).NotEmpty();
+                RuleFor(n => n.marca).NotEmpty();
+                RuleFor(n => n.fabricante).NotEmpty();
+                RuleFor(n => n.precio).NotEmpty();
+                RuleFor(n => n.codigo_barra).NotEmpty();
+            }
         }
 
         public class Manejador : IRequestHandler<Ejecutar>
@@ -31,6 +45,9 @@ namespace Aplicacion
             {
                 //Creamos un identificador Global Unico
                 Guid id = Guid.NewGuid();
+                if(request.productoId != null){
+                    id = request.productoId ?? Guid.NewGuid();
+                }   
                 //Crear propiedad (Porducto)
                 var producto = new Producto
                 {
