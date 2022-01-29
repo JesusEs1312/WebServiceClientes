@@ -2,6 +2,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 using Aplicacion.Seguridad;
 using Dominio;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,5 +28,17 @@ namespace WebAPI.Controllers
         //http://localhost:5000/api/usuario
         [HttpPut]
         public async Task<ActionResult<UsuarioData>> ActualizarUsuario(ActualizarUsuario.Ejecuta parametros) => await mediator.Send(parametros);
+
+        //http://localhost:5000/api/usuario/actualizarContraseña
+        [HttpPut("actualizarContrasena")]
+        public async Task<ActionResult<Unit>> ActualizarContra(RecuperaContraseña.Ejecuta parametros) => await mediator.Send(parametros);
+
+        //http://localhost:5000/api/usuario/validarCodigo
+        [HttpPost("validarCodigo")]
+        public async Task<ActionResult<Unit>> ValidarCodigo(CambiarContraseña.Ejecuta parametros) => await mediator.Send(parametros);
+
+        //http://localhost:5000/api/usuario/nuevaContra
+        [HttpPost("nuevaContra")]
+        public async Task<ActionResult<Unit>> nuevaContra(NuevaContraseña.Ejecuta parametros) => await mediator.Send(parametros);
     }
 }
