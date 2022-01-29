@@ -1,3 +1,4 @@
+using System;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace Aplicacion
     {
         public class Ejecutar : IRequest
         {
-            public int id {get; set;}
+            public Guid id {get; set;}
         }
 
         public class Manejador : IRequestHandler<Ejecutar>

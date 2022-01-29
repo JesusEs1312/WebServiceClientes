@@ -1,0 +1,15 @@
+C:\WebService\Dominio\bin\Release\net5.0\Dominio.deps.json
+C:\WebService\Dominio\bin\Release\net5.0\Dominio.runtimeconfig.json
+C:\WebService\Dominio\bin\Release\net5.0\Dominio.runtimeconfig.dev.json
+C:\WebService\Dominio\bin\Release\net5.0\Dominio.dll
+C:\WebService\Dominio\bin\Release\net5.0\ref\Dominio.dll
+C:\WebService\Dominio\bin\Release\net5.0\Dominio.pdb
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.csproj.AssemblyReference.cache
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.AssemblyInfoInputs.cache
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.AssemblyInfo.cs
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.csproj.CoreCompileInputs.cache
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.dll
+C:\WebService\Dominio\obj\Release\net5.0\ref\Dominio.dll
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.pdb
+C:\WebService\Dominio\obj\Release\net5.0\Dominio.genruntimeconfig.cache

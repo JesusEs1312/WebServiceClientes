@@ -58,6 +58,10 @@ namespace Aplicacion
                     precio       = request.precio,
                     codigo_barra = request.codigo_barra
                 };
+
+                if(request.nombre == "" || request.marca == "" || request.fabricante == "" || request.codigo_barra == ""){
+                    throw new System.Exception("No se puedo agregar el producto");
+                }
                 //Insertamos nuevo producto
                 this.context.Add(producto);
                 //Guardar los cambios en el Servidor de SQL

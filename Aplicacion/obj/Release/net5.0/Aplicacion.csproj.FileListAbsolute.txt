@@ -1,0 +1,17 @@
+C:\WebService\Aplicacion\bin\Release\net5.0\Aplicacion.deps.json
+C:\WebService\Aplicacion\bin\Release\net5.0\Aplicacion.dll
+C:\WebService\Aplicacion\bin\Release\net5.0\ref\Aplicacion.dll
+C:\WebService\Aplicacion\bin\Release\net5.0\Aplicacion.pdb
+C:\WebService\Aplicacion\bin\Release\net5.0\Dominio.dll
+C:\WebService\Aplicacion\bin\Release\net5.0\Persistencia.dll
+C:\WebService\Aplicacion\bin\Release\net5.0\Persistencia.pdb
+C:\WebService\Aplicacion\bin\Release\net5.0\Dominio.pdb
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.csproj.AssemblyReference.cache
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.AssemblyInfoInputs.cache
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.AssemblyInfo.cs
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.csproj.CopyComplete
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.dll
+C:\WebService\Aplicacion\obj\Release\net5.0\ref\Aplicacion.dll
+C:\WebService\Aplicacion\obj\Release\net5.0\Aplicacion.pdb

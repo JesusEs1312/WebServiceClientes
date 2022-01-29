@@ -34,7 +34,7 @@ namespace WebAPI.Controllers
         //Eliminar producto
         [Authorize(Roles ="Admin")]
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Unit>> Eliminar(int id) => await mediator.Send(new Eliminar.Ejecutar{id = id});
+        public async Task<ActionResult<Unit>> Eliminar(Guid id) => await mediator.Send(new Eliminar.Ejecutar{id = id});
 
         //Encontrar por Id
         [HttpGet("{id}")]
